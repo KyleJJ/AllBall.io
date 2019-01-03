@@ -1,6 +1,6 @@
-# April
+# AllBall.io
 
-A landing page template.
+The Best NBA App Ever.
 
 * [Getting started](#getting-started)
 
