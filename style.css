@@ -4,6 +4,7 @@ body {
         font-family: 'PT Sans Caption';
         color: white;
         background: #1c2134;
+        width: 100vw;
 }
 input:-internal-autofill-previewed, input:-internal-autofill-selected, textarea:-internal-autofill-previewed, textarea:-internal-autofill-selected, select:-internal-autofill-previewed, select:-internal-autofill-selected {
         background-color: white !important;
@@ -58,7 +59,7 @@ input:-internal-autofill-previewed, input:-internal-autofill-selected, textarea:
         font-size: 1rem;
         font-weight: 400;
         color: rgba(255,255,255,.7);
-        margin: 2rem 0;
+        margin: 0 0 2rem 0;
 }
 .hero-features {
         position: relative;
@@ -155,8 +156,8 @@ input:-internal-autofill-previewed, input:-internal-autofill-selected, textarea:
         transition: all .3s ease;
 }
 .input-container .submit-button:hover {
-        background: #000000;
-        box-shadow: 0px 2px 5px #262d4742;
+        background: #222222;
+        box-shadow: 0px 2px 10px #262d4770;
 
 }
 .private-beta-wrapper {
@@ -220,9 +221,22 @@ input:-internal-autofill-previewed, input:-internal-autofill-selected, textarea:
         color: rgba(255, 255, 255, 0.3);
 }
 
+.hide-mobile { display: initial; }
+.show-mobile { display: none; }
 
+.fa-check {
+        font-size: 1rem;
+}
 
 @media only screen and (max-width: 768px) {
+        .hide-mobile { display: none; }
+        .show-mobile { display: initial; }
+
+        .input-container .submit-button {
+                padding: 0;
+                width: 2.5rem;
+                text-align: center;
+        }
         .hero-content {
                 flex-direction: column;
         }
@@ -236,6 +250,12 @@ input:-internal-autofill-previewed, input:-internal-autofill-selected, textarea:
                 padding: 20vh 10% 5vh 10%;
                 text-align: center;
         }
+        .hero-content .hero-images img#allgames {
+                max-width: 100%;
+                top: 0;
+                left: 50%;
+                transform: translateX(-50%)
+        }
         .hero-content .hero-images img#gamethread {
                 max-width: 100%;
                 top: 0;
@@ -248,6 +268,7 @@ input:-internal-autofill-previewed, input:-internal-autofill-selected, textarea:
         }
         .disclaimer {
                 text-align: center !important;
+                margin: 0 !important;
         }
 }
       
